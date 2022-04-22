@@ -1,0 +1,157 @@
+@font-face {
+  font-family: "Roboto_Mono";
+  src: url("Roboto_Mono/static/RobotoMono-Medium.tff")
+}
+
+html {
+    background: url("images/BookShelves.png");
+  background-repeat: repeat-y;
+ -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  font-family: Verdana;
+  margin: 0;
+  background-color: #cdcad8;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #3d3a37;
+  color: #ffffff;
+  font-size: 2.5em;
+  padding-left: .25em;
+}
+header > a {
+  cursor: pointer;
+}
+
+.burger
+{
+  font-size: .5em;
+  background-color: #3d3a37;
+  border-color: #353331;
+  border-style: solid;
+  border-width: 0px;
+  color: #FFFFFF;
+  height: 100%;
+  left: 0;
+  overflow-x: hidden;
+  position: fixed;
+  padding-top: 60px;
+  top: 0;
+  transition: 0.5s;
+  width: 0;
+  z-index: 1;
+}
+.burger a
+{
+  color: #FFFFFF;
+  display: block;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+
+  transition: color .3s;
+}
+.burger a:hover {
+  color: #dbdbdb;
+}
+/*.burger .bookmark
+{
+  font-size:  1.125em;
+  padding-bottom: 4px;
+  padding-left: 48px;
+  padding-top: 4px
+}*/
+.burger .exitBtn
+{
+  font-size: 1.5em;
+  margin-left: 50px;
+  position: absolute;
+  right: 25px;
+  top: 0;
+}
+
+article {
+  margin-left: .5em;
+  margin-right: .5em;
+}
+
+h1 
+{
+  font-family: 'Caveat', cursive;
+  margin-top: .15em;
+  margin-bottom: .15em;
+  margin-left: .15em;
+}
+
+.contentSection {
+  margin-bottom: 1em;
+  display: flex;
+}
+@media only screen and (max-width: 676px) {
+  .contentSection {
+    flex-direction: column;
+  }
+}
+
+.indexCard {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid red;
+  margin-left: 1em;
+  margin-right: 1em;
+  flex: 40%;
+  justify-content: center;
+}
+.indexCard > * {
+ overflow-wrap: break-word;
+}
+
+.indexCardHeading {
+  border: 3px solid blue;
+  background-color: #c8a540;
+  font-size: 1.5em;
+}
+.indexCardText {
+  border: 3px solid green;
+  background-color: #efefef;
+  font-size: 1em;
+  padding-left: .65em;
+}
+
+.picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 40%;
+  border: 3px dashed black;
+}
+.picture > img {
+  width: 80%;
+  height: auto;
+}
+
+/*@media only screen and (max-width: 676px) {
+  .indexCard {
+    width: 28em;
+  }
+}*/
+
+.contentSection.orderA > .indexCard {
+  order: 1;
+}
+.contentSection.orderA > .picture {
+  order: 2;
+}
+
+.contentSection.orderB > .indexCard {
+  order: 2;
+}
+.contentSection.orderB > .picture {
+  order: 1;
+}

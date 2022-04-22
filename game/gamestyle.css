@@ -1,0 +1,55 @@
+body {
+	margin: 0;
+	font-family: Verdana;
+}
+
+header {
+  width: 100%;
+  background-color: #3d3a37;
+  color: #ffffff;
+  font-size: 2.5em;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	text-align: center;
+}
+
+.indexCardEnter {
+  border: 3px solid green;
+  background-color: #efefef;
+}
+
+.indexCardEnter input, .indexCardEnter button {
+  font-size: 1.5em;
+  border: 3px solid black;
+  font: 'Caveat'
+}
+
+/*.card {
+	border: 1px solid #000000;
+	height: 250px;
+
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+  
+}
+.small-card {
+	border: 1px solid #000000;
+	height: 150px;
+	width: 150px;
+}
+.card-pile {
+	display: flex;
+	flex-direction: row;
+}
+
+.card-deck {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-template-rows: 250px 250px;
+}*/
