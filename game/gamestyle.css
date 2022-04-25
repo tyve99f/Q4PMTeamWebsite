@@ -1,6 +1,18 @@
+@font-face {
+  font-family: "Roboto_Mono";
+  src: url("../Roboto_Mono/static/RobotoMono-Medium.ttf");
+      
+}
+@font-face {
+  font-family: "Roboto_Light";
+  src: url("../Roboto_Mono/static/RobotoMono-Light.ttf");
+  font-style: italic
+}
+
 body {
 	margin: 0;
 	font-family: Verdana;
+  background: inherit;
 }
 
 header {
@@ -16,17 +28,126 @@ a {
 
 h1 {
 	text-align: center;
+  margin-top: 0;
+}
+h2 {
+  text-align: center;
+  font-size: 3vw;
+  margin:0;
+}
+
+h3 {
+  text-align: center;
+  font-family: Roboto_Light;
+  font-style: italic;
+  color: #FFFFFF;
+  font-size: 2em;
+}
+
+.indexCard {
+  display: flex;
+  align-items: center;
+  height: 100vh;
 }
 
 .indexCardEnter {
+  display: flex;
+/*   height: 100vh;
+  align-content: center; */
   border: 3px solid green;
-  background-color: #efefef;
+  background-color: #efefef
+  overflow-x: hidden;;
+  padding: .5em;
+}
+
+
+/* stuff for the reading phase of the game */
+.story {
+  height: 2em;
+  width: 2em;
+  border: 2px solid black;
+}
+
+.storyheading {
+  background-color: #3d3a37;
+  text-align: center;
+  padding: 0.25em;
+  width: 40%;
+  margin: auto;
+}
+
+.storyfloat {
+  /*margin: auto;*/
+  width: 70%;
+    border: 1px solid black;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+  font-size: 0em;
+}
+
+.storychild {
+
+  display: inline-block;
+  border: 1px solid red;
+ margin: 0;
+  vertical-align: middle;
+  width:48%;
+}
+.storyold {
+ /* text-align: center;*/
+  background-color: #c8a540;
+  padding: 0em;
+  width: 100%
+  margin: 0;
+  font-size: 1em !important;
+  
+  
+  
+ 
+}
+
+.storynew {
+  /*text-align: center;*/
+  background-color: #FFFFFF;
+  padding: 0em;
+  width: 100%
+  margin: 0;
+  
+ 
+
+
+}
+
+@media only screen and (max-width: 676px) {
+  .indexCardEnter .startForm {
+    flex-direction: column;
+  }
+}
+
+article {
+  padding-top: 4em;
+}
+
+.inputBox {
+  
+}
+
+.startForm {
+  border: 3px solid yellow; /*Remove; for debugging*/
+/*   margin-left: auto;
+  margin-right: auto; */
+  justify-content: space-around;
+  align-items: cent er;
+  width: 100%;
 }
 
 .indexCardEnter input, .indexCardEnter button {
   font-size: 1.5em;
   border: 3px solid black;
-  font: 'Caveat'
+  text-align: center;
+  
+
 }
 
 /*.card {

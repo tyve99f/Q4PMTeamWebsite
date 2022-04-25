@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Roboto_Mono";
-  src: url("Roboto_Mono/static/RobotoMono-Medium.tff")
+  src: url("Roboto_Mono/static/RobotoMono-Medium.ttf")
 }
 
 html {
@@ -16,6 +16,13 @@ body {
   font-family: Verdana;
   margin: 0;
   background-color: #cdcad8;
+}
+a:link
+{
+ text-decoration: none; 
+}
+a:hover{
+  color: blue;
 }
 
 header {

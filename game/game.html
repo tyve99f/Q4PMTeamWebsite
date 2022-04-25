@@ -1,50 +1,84 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Awful Authors</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/main.css" type="text/css" />
-		<link rel="stylesheet" href="gamestyle.css" type="text/css" />
-	</head>
-	<body>
-		<header><a onclick="openMenu()">&#9776;</a> Awful Authors
-    
-      <div id="burger" class="burger">
-          
-        <a href="javascript:void(0)" class="exitBtn" onclick="closeMenu()">&times;</a>
-        <a href="index.html">Home</a>
-          <a href="#Directions" class="bookmark" onclick="closeMenu()">How to Play</a>
-          <a href="#Game" class="bookmark" onclick="closeMenu()">Game Link</a>
-          <a href="#Vendicant" class="bookmark" onclick="closeMenu()">Vendicant Inc</a>
-        <a href="#Socials" class="bookmark" onclick="closeMenu()">Social Medias</a>
-        <!--<a href="student.html">Students</a>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Awful Authors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/main.css" type="text/css" />
+  <link rel="stylesheet" href="gamestyle.css" type="text/css" />
+</head>
+
+<body>
+  <header><a onclick="openMenu()">&#9776;</a> Awful Authors
+
+    <div id="burger" class="burger">
+
+      <a href="javascript:void(0)" class="exitBtn" onclick="closeMenu()">&times;</a>
+      <a href="/index.html">Home</a>
+      <a href="/game/readingPhaseTemplate.html">R.P.html</a>
+      <a href="/game/writingPhaseTemplate.html">W.P.html</a>
+      <!--<a href="student.html">Students</a>
         <a href="parent.html">Parents</a>
         <a href="staff.html">Directory</a>-->
-         
-      </div>
-    </header>
-		<article>
-  
-      <div class="contentSection orderA">
-  			<div class="indexCard">
-          <div class="indexCardHeading" style="margin-top: 4em;">
-    				<h1>What should we call you?</h1>
-          </div>
-          <div class="indexCardEnter">
-    				<form action="lobby.php" method="post" style="display: flex; justify-content: space-around; align-items: center;">
-    					<input type="text" maxlength="16" name="display_name" placeholder="Enter your name" />
-    					<button type="submit">Continue to game</button>
-    				</form>
-          </div>
-  			</div>
-      </div>
-		</article>
-    <script src="/script.js"></script>
-	</body>
-</html>
 
-	
+    </div>
+  </header>
+  <article>
+
+    <div class="contentSection orderA">
+      <div class="indexCard">
+        <div class="indexCardHeading" style="margin-top: 4em;">
+          <h1>What should we call you?</h1>
+        </div>
+        <div class="indexCardEnter">
+
+          <form class="startForm" action="lobby.php" method="post"
+            style="display: flex; justify-content: space-around; align-items: center;">
+            <div class="inputBox">
+              <input type="text" maxlength="16" name="display_name" placeholder="Enter your name" />
+            </div>
+            <div class="inputBox">
+              <button type="submit">Continue to game</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </article>
+  </br>
+
+  <div class="storyheading">
+    <h3> Reading Story 1 of 8</h3>
+
+  </div>
+  <div class="storyfloat">
+    <div class="storychild">
+    <div class="storyold">
+      <h2>Previous </br>Sentence</h2>
+      <p>Sample Text...Sample Text...Sample Text...Sample Text...Sample Text...Sample Text...Sample Text...Sample Text...Sample Text...Sample Text...Sample Text...</p> 
+    </div>
+      </div>
+      
+    <div class="storychild">
+    <div class="storynew">
+      <h2>Your </br>Sentence</h2>
+      <p>Sample Text...Sample Text...Sample Text...Sample Text...Sample Text...Sample Text...Sample Text...Sample Text...Sample Text...Sample Text...</p>
+    </div>
+      </div>
+    
+    
+  </div>
+</div>
+
+
+
+
+  <script src="../script.js"></script>
+</body>
+
+</html>

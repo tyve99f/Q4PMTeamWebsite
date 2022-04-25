@@ -1,6 +1,6 @@
 //Idle timer template
 let inactivityTime = function () {
-  console.log('Warning: You are about to be kicked for inactivity!');
+  console.log('Inactivity Timer Start');
   let time;
   window.onload = resetTimer;
   document.onmousemove = resetTimer;
@@ -12,7 +12,7 @@ let inactivityTime = function () {
   }
   function resetTimer() {
     clearTimeout(time);
-    time = setTimeout(logout, 4000); //amount of milliseconds allowed until the logout() function is called
+    time = setTimeout(logout, 4000000); //amount of milliseconds allowed until the logout() function is called
   }
 };
 inactivityTime();
